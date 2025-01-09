@@ -1,11 +1,14 @@
-package adapter;
+package main;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.uts.MainActivity;
 import com.example.uts.R;
 
 public class DetailProduct extends AppCompatActivity {
@@ -25,6 +28,12 @@ public class DetailProduct extends AppCompatActivity {
         image.setImageResource(imageId);
         name.setText(productName);
         price.setText("Rp " + productPrice);
+
+        Button btn = findViewById(R.id.btn);
+        btn.setOnClickListener(v->{
+            Intent intent = new Intent(this, MainActivity.class);
+            startActivity(intent);
+        });
 
     }
 }

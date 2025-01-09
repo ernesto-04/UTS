@@ -1,10 +1,7 @@
-package adapter;
+package main.adapter;
 
 import android.content.Context;
 import android.content.Intent;
-import android.content.res.AssetManager;
-import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -17,9 +14,9 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.uts.R;
 
-import java.io.InputStream;
 import java.util.List;
 
+import main.DetailProduct;
 import model.Product;
 
 public class ProductAdapter extends RecyclerView.Adapter<ProductAdapter.ProductViewHolder> {
@@ -54,7 +51,7 @@ public class ProductAdapter extends RecyclerView.Adapter<ProductAdapter.ProductV
 ////            throw new RuntimeException(e);
 //        }
         holder.itemView.setOnClickListener((v) -> {
-            Intent intent = new Intent(context, adapter.DetailProduct.class);
+            Intent intent = new Intent(context, DetailProduct.class);
             intent.putExtra("image", p.getImage());
             intent.putExtra("price", p.getPrice());
             intent.putExtra("name", p.getName());
