@@ -39,5 +39,8 @@ public class MainActivity extends AppCompatActivity {
         products.add(new Product("Sush", 1000, R.drawable.sushi));
         products.add(new Product("Sushi", 2000, R.drawable.sushi));
         products.add(new Product("Sushii", 3000, R.drawable.sushi));
+
+        adapter = new ProductAdapter(this, products);
+        rvProduct.setAdapter(adapter);
     }
 }
