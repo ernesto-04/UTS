@@ -10,14 +10,14 @@
         android:id="@+id/et_name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Input Name"/>
+        android:hint="Input Name"/>
 
     <EditText
         android:id="@+id/et_age"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
-        android:text="Input age"/>
+        android:hint="Input age"/>
 
     <Button
         android:id="@+id/savebutton"

@@ -35,15 +35,15 @@ public class MainActivity extends AppCompatActivity {
             return insets;
         });
 
-        rvProduct = findViewById(R.id.rv_product);
-        rvProduct.setLayoutManager(new LinearLayoutManager(this));
-
-        products.add(new Product("Sush", 1000, R.drawable.sushi));
-        products.add(new Product("Sushi", 2000, R.drawable.sushi));
-        products.add(new Product("Sushii", 3000, R.drawable.sushi));
-
-        adapter = new ProductAdapter(this, products);
-        rvProduct.setAdapter(adapter);
+//        rvProduct = findViewById(R.id.rv_product);
+//        rvProduct.setLayoutManager(new LinearLayoutManager(this));
+//
+//        products.add(new Product("Sush", 1000, R.drawable.sushi));
+//        products.add(new Product("Sushi", 2000, R.drawable.sushi));
+//        products.add(new Product("Sushii", 3000, R.drawable.sushi));
+//
+//        adapter = new ProductAdapter(this, products);
+//        rvProduct.setAdapter(adapter);
 
         addfragment = findViewById(R.id.addfragment_btn);
         addfragment.setOnClickListener(v->{
